@@ -9,7 +9,7 @@ jobs:
         
       - name: Git Commands
         run: |
-             mkdir v2-new-git
+             mkdir C:/Users/ACER/v2-new-git
              cd C:/Users/ACER/v2-new-git
              git init
              git remote add origin https://github.com/steja6872/v2-new-git.git
