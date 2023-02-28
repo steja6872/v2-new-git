@@ -1,5 +1,8 @@
 name: Push Desktop File to GitHub
-on: [push]
+
+on:
+  schedule:
+    - cron: '46 22 * * *'
    
 jobs:
   build:
