@@ -1,0 +1,20 @@
+name: Push Desktop File to GitHub
+on: [push]
+   
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+        
+      - name: Git Commands
+        run: |
+             mkdir v2-new-git
+             cd C:/Users/ACER/v2-new-git
+             git init
+             git remote add origin https://github.com/steja6872/v2-new-git.git
+             cp C:/Users/ACER/Desktop/factorial.java C:/Users/ACER/v2-new-git  
+             git add factorial.java
+             git commit -m "Add Java file"
+             git status
+             git push -u origin master
