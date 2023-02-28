@@ -2,7 +2,7 @@ name: Push Desktop File to GitHub
 
 on:
   schedule:
-    - cron: '46 22 * * *'
+    - cron: '49 22 * * *'
    
 jobs:
   build:
