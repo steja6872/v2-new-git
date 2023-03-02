@@ -2,11 +2,11 @@ name: Push Desktop File to GitHub
 
 on:
   schedule:
-    - cron: '52 22 * * *'
+    - cron: '* * * * *'
    
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
         
