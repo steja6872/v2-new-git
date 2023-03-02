@@ -1,8 +1,7 @@
-name: Push Desktop File to GitHub
-
+name: Daily Script
 on:
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '* * * * *'
    
 jobs:
   build:
