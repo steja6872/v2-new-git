@@ -11,13 +11,15 @@ jobs:
         
       - name: Git Commands
         run: |
-             mkdir C:/Users/ACER/v2-new-git
-             cd C:/Users/ACER/v2-new-git
-             git init
+       
+             cd C:/Users/ACER
+     
              git pull https://github.com/steja6872/v2-new-git.git
-             git remote add origin https://github.com/steja6872/v2-new-git.git
+             
              cp C:/Users/ACER/Desktop/factorial.java C:/Users/ACER/v2-new-git
-             git add factorial.java
+             git add .
              git commit -m "Add Java file"
              git status
+             git remote remove origin
+             git remote add origin https://github.com/steja6872/v2-new-git.git
              git push -u origin master
